@@ -3,17 +3,15 @@ import { GetServerSidePropsContext, GetStaticPropsContext } from "next";
 import { fadeInUp, routeAnimation, stagger } from "../animations";
 import { ServiceCard } from "../components/ServiceCard";
 import { services } from "../data";
+import Head from "next/head";
 
 const index = ({ endpoint }) => {
   console.log("endpoints", endpoint);
   return (
-    <motion.div
-      className="flex flex-col flex-grow px-6 pt-1"
-      variants={routeAnimation}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-    >
+    <div className="flex flex-col flex-grow px-6 pt-1">
+      <Head>
+        <title>Web Developer | portofolio | Sujackson</title>
+      </Head>
       <h5 className="my-5 font-medium">
         I am enthusiastic about how to improve human life with software
         engineering and IoT skill. I am able to work under pressure and adhere
@@ -43,7 +41,7 @@ const index = ({ endpoint }) => {
           ))}
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

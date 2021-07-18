@@ -42,15 +42,17 @@ const Sidebar = () => {
 
       <div className="flex justify-around w-9/12 mx-auto my-5 md:w-full">
         <a
-          href=""
+          href="https://github.com/jackzro"
           className="flex items-center justify-center space-x-2 text-black"
+          aria-label="Github"
         >
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
           <span>Github</span>
         </a>
         <a
-          href=""
+          href="https://www.linkedin.com/in/sujackson-sujackson-7a1551197/"
           className="flex items-center justify-center space-x-2 text-blue-600"
+          aria-label="LinkedIn"
         >
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
           <span>LinkedIn</span>
